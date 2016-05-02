@@ -2,18 +2,19 @@
 // Use of this source code is governed by a BSD-style license that can be
 // found in the LICENSE file.
 
-#ifndef MEDIA_GPU_IPC_COMMON_GPU_VIDEO_ACCELERATOR_UTIL_H_
-#define MEDIA_GPU_IPC_COMMON_GPU_VIDEO_ACCELERATOR_UTIL_H_
+#ifndef MEDIA_GPU_GPU_VIDEO_ACCELERATOR_UTIL_H_
+#define MEDIA_GPU_GPU_VIDEO_ACCELERATOR_UTIL_H_
 
 #include <vector>
 
 #include "gpu/config/gpu_info.h"
+#include "media/gpu/media_gpu_export.h"
 #include "media/video/video_decode_accelerator.h"
 #include "media/video/video_encode_accelerator.h"
 
 namespace media {
 
-class GpuVideoAcceleratorUtil {
+class MEDIA_GPU_EXPORT GpuVideoAcceleratorUtil {
  public:
   // Convert decoder gpu capabilities to media capabilities.
   static VideoDecodeAccelerator::Capabilities
@@ -60,4 +61,4 @@ class GpuVideoAcceleratorUtil {
 
 }  // namespace media
 
-#endif  // MEDIA_GPU_IPC_COMMON_GPU_VIDEO_ACCELERATOR_UTIL_H_
+#endif  // MEDIA_GPU_GPU_VIDEO_ACCELERATOR_UTIL_H_
